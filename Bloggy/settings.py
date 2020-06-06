@@ -121,3 +121,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# # This is to send emails to the console of the application
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_HOST_USER = 'alex.kwashie@hotmail.com'
+EMAIL_HOST_PASSWORD = 'Fantastic1!'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+
+

@@ -6,4 +6,12 @@
        Published {{ post.publish }} by {{ post.author }}
      </p>
      {{ post.body|linebreaks }}
+       
+       <p>
+            <!--this calls the app name in th urls.py and the specified name for the url path and uses the post id as a parameter to
+             allow share of the particular post-->
+           <a href="{% url "blog:post_share" post.id %}"> <!-- -->
+               Share this post
+           </a>
+       </p>
    {% endblock %}
